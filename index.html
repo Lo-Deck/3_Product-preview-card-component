@@ -13,15 +13,11 @@
 
       <main>
 
-        <img  srcset="./images/image-product-mobile.jpg 686w,
-                      ./images/image-product-desktop.jpg 600w"
-
-              sizes="(max-width: 800px) 686px,
-                    600px"
-
-              src="./images/image-product-mobile.jpg"
-
-              alt="photo perfume">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/image-product-mobile.jpg">
+          <source media="(min-width: 801px)" srcset="./images/image-product-desktop.jpg">
+          <img src="./images/image-product-mobile.jpg" alt="photo perfume">
+        </picture>
 
         <section >
           <h1>perfume</h1>

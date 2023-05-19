@@ -30,10 +30,11 @@ main{
 }
 
 
-img{
+picture, img{
     max-width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    object-fit: cover;
 }
 
 /*SECTION1*/
@@ -62,8 +63,6 @@ h2{
     margin-right: 3.0rem;
 }
 
-
-
 p.price span:first-child{
     font-size: 3.0rem;
     font-family: 'Fraunces', serif;
@@ -73,8 +72,6 @@ p.price span:first-child{
     padding: 0;
 }
 
-
-
 p.price span:last-child{
     text-decoration-line: line-through; 
     display: inline-block;
@@ -82,8 +79,6 @@ p.price span:last-child{
     bottom: 0.5rem;
     font-size: 1.3rem;
 }
-
-
 
 button{
     background-color: hsl(158, 36%, 37%);
@@ -94,6 +89,7 @@ button{
     border-radius: 1rem;
     border-style: hidden;
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 
 button span{
@@ -134,11 +130,12 @@ button:hover{
         height: 43.5rem;
     }
 
-    img{
+    picture, img{
         width: 30rem;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         border-top-right-radius: 0;
+        height: 100%;
     }
 
     /*SECTION1*/
